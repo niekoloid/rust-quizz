@@ -1,0 +1,13 @@
+[package]
+name = "uncode"
+version = "0.1.0"
+authors = ["ubuntu <ubuntu@example.com>"]
+links = "build.rs"
+
+[dependencies]
+libc = "0.2.0"
+c_string = "0.7.0"
+
+[build-dependencies]
+gcc = "0.3"
+
