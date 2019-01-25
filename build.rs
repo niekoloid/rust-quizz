@@ -1,8 +1,7 @@
-extern crate gcc;
+extern crate cc;
 
-fn main(){
-    gcc::Build::new()
-                .file("src/c/server.c")
-                .include("src")
-                .compile("server.a");
+fn main() {
+    cc::Build::new()
+        .file("src/c/server.c")
+        .compile("server.a");
 }
