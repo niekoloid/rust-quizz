@@ -1,5 +1,5 @@
+use std::mem;
 use std::sync::{Arc, Mutex, Once, ONCE_INIT};
-use std::{mem};
 
 #[derive(Clone)]
 pub struct Counter {

@@ -1,13 +1,15 @@
 [package]
-name = "uncode"
+name = "server"
 version = "0.1.0"
-authors = ["ubuntu <ubuntu@example.com>"]
+authors = [""]
 links = "build.rs"
 
 [dependencies]
 libc = "0.2.0"
 c_string = "0.7.0"
 
-[build-dependencies]
-gcc = "0.3"
+[dev-dependencies]
+reqwest = "0.9"
 
+[build-dependencies]
+cc = "1"
