@@ -1,6 +1,5 @@
-extern crate server;
+extern crate rewrite;
 
 fn main() {
-    println!("Start up server");
-    server::main();
+    rewrite::main();
 }

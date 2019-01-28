@@ -1,15 +1,11 @@
 [package]
-name = "server"
+name = "rewrite"
 version = "0.1.0"
-authors = [""]
-links = "build.rs"
+authors = ["Do Duy <juchiast@gmail.com>"]
 
 [dependencies]
-libc = "0.2.0"
-c_string = "0.7.0"
+hyper = "0.12"
+futures = "0.1"
 
 [dev-dependencies]
 reqwest = "0.9"
-
-[build-dependencies]
-cc = "1"

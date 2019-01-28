@@ -1,4 +1,4 @@
-extern crate server;
+extern crate rewrite;
 extern crate reqwest;
 
 static HOST: &str = "http://127.0.0.1:8080/";
@@ -15,7 +15,7 @@ fn get(path: &str) -> String {
 
 #[test]
 fn test() {
-    let server = std::thread::spawn(|| server::main());
+    let server = std::thread::spawn(|| rewrite::main());
     assert_eq!(get("count"), "count:0");
     assert_eq!(post("count"), "count:0");
     assert_eq!(get("count"), "count:1");
